@@ -3,9 +3,9 @@
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 100%), 
                       url('../images/maceio.jpeg');
     background-size: cover;
-    background-repeat: no-repeat; /* Proíbe o celular de duplicar a foto */
+    background-repeat: no-repeat;
     
-    /* No celular: tanto o degradê quanto a foto começam no topo juntos */
+    /* No celular: gradiente e imagem começam no topo normal */
     background-position: center top, center top; 
     
     padding: 3rem 0; 
@@ -15,11 +15,9 @@
 /* Aplica o ajuste APENAS em computadores e tablets grandes */
 @media (min-width: 992px) {
     .page-header-hero {
-        /* O primeiro valor ajusta o degradê, o segundo ajusta a imagem.
-           Dessa forma, ambos sobem juntos e o retângulo cobre 100% da foto! */
-        background-position: center -60px, center -60px; 
-        
-        /* DICA: Se o seu ajuste ideal for 40px, mude os dois valores acima para: center -40px, center -40px */
+        /* CORREÇÃO AQUI: O gradiente fica travado cobrindo o bloco inteiro (center top) 
+           e APENAS a foto (segundo valor) sobe os -60px para fazer o corte que você quer. */
+        background-position: center top, center -60px; 
     }
 }
 
