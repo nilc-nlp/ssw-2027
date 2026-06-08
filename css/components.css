@@ -1,12 +1,17 @@
 /* Faixa com a imagem de Maceió para as páginas secundárias */
 .page-header-hero {
+    /* Define uma cor de fundo escura para segurança no mobile */
+    background-color: #1a1a1a; 
+    
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 100%), 
                       url('../images/maceio.jpeg');
     background-size: cover;
     
-    /* O primeiro valor (center) controla a horizontal. 
-       O segundo valor controla a vertical (onde a imagem começa). */
-    background-position: center -60px; 
+    /* 1. Proíbe terminantemente a duplicação da imagem */
+    background-repeat: no-repeat;
+    
+    /* 2. Remove exatamente os 60px do topo e fixa a partir dali */
+    background-position: center calc(0% - 60px); 
     
     padding: 3rem 0; 
     border-bottom: 4px solid #3498db; 
