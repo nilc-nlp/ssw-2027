@@ -1,0 +1,81 @@
+/* Faixa com a imagem de Maceió para as páginas secundárias */
+.page-header-hero {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 100%), 
+                      url('../images/maceio.jpeg');
+    background-size: cover;
+    
+    /* O primeiro valor (center) controla a horizontal. 
+       O segundo valor controla a vertical (onde a imagem começa). */
+    background-position: center -60px; 
+    
+    padding: 3rem 0; 
+    border-bottom: 4px solid #3498db; 
+}
+
+/* Faixa compacta para o topo das páginas secundárias */
+.page-header {
+    background-color: #1a365d; /* Azul marinho mais claro que o menu, gerando contraste */
+    border-bottom: 4px solid #3498db; /* Mantém a linha de destaque */
+    padding: 3rem 0;
+}
+
+/* Imagem Hero Maceió */
+.hero-workshop {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%), 
+                      url('../images/maceio.jpeg'); /* '../' serve para sair da pasta css e achar a pasta images */
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 56px); 
+    position: relative;
+}
+
+/* Cronômetro (Countdown) */
+.countdown-box {
+    background-color: rgba(33, 37, 41, 0.85);
+    border-radius: 12px;
+    max-width: 280px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.countdown-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3498db;
+    line-height: 1;
+}
+
+.countdown-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+/* Estilo customizado para os Cards de Atualizações */
+.update-card {
+    border-left: 4px solid #3498db !important;
+    transition: transform 0.2s;
+}
+
+.update-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Grid de Logos na base */
+.logo-container img {
+    max-height: 90px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Detalhes visuais exclusivos para as páginas do Blizzard */
+.blizzard-text-accent {
+    color: #00d2c4 !important; /* Um ciano vibrante que combina com o mar e destaca no azul escuro */
+}
+
+.blizzard-card-active {
+    border-left: 4px solid #00d2c4 !important;
+}
+
+

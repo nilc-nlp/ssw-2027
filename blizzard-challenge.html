@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blizzard Challenge 2027 - SSW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark-blue border-bottom border-secondary">
+        <div class="container-fluid px-4 px-md-5">
+            <a class="navbar-brand d-xl-none text-white small" href="index.html">SSW 2027</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-uppercase gap-2 text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Welcome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="authors.html">Authors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="committees.html">Committees</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="blizzardDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            The Blizzard Challenge 2027
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark-blue" aria-labelledby="blizzardDropdown">
+                            <li><a class="dropdown-item active" href="blizzard-challenge.html">About the Challenge</a></li>
+                            <li><a class="dropdown-item" href="blizzard-challenge-program.html">Preliminary Program</a></li>
+                            <li><a class="dropdown-item" href="blizzard-challenge-dates.html">Important Dates</a></li>
+                            <li><a class="dropdown-item" href="blizzard-challenge-rules.html">The Rules</a></li>
+                            <li><a class="dropdown-item" href="blizzard-challenge-committee.html">Organizing Committee</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header-hero text-white mb-5">
+        <div class="container-fluid px-4 px-md-5">
+            <div class="row justify-content-end">
+                <div class="col-md-9 col-lg-6 text-end text-shadow-strong">
+                    <h1 class="display-5 fw-bold mb-2">The Blizzard Challenge 2027</h1>
+                    <p class="fs-6 fst-italic fw-light text-light opacity-90 mb-0">
+                        Evaluating corpus-based speech synthesis systems
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 px-md-5 py-4">
+        <div class="row g-5">
+            
+            <div class="col-lg-8 text-secondary">
+
+                <h3 class="fw-bold text-dark-blue mb-3 fs-4">The Blizzard Challenge 2027</h3>
+                <p>Brazil is a continental country, the largest and most populous in South America. Speech Synthesis Workshop 2027 will bring up the issue of linguistic diversity to highlight two of several Brazilian accents. In line with this theme, we propose that the Blizzard Challenge 2027 focus on synthesizing speech for two accents of Brazil and also one from another main variant of Portuguese, the European Portuguese from Portugal.</p>
+                <p class="mb-5">Brazilian Portuguese and European Portuguese differ primarily in pronunciation, vocabulary, grammar, and formal usage. While Brazilian Portuguese has a more open, melodic, and nasal sound, European Portuguese is more closed, often omitting unstressed vowels.</p>
+
+                <p class="fs-5 text-secondary mb-4">
+                    The tasks focus on accented zero-shot TTS for Portuguese. We provide three datasets covering three distinct accents: <strong>São Paulo, Recife, and European Portuguese from Portugal</strong>, totaling ~747 hours.
+                </p>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="card h-100 border-start border-4 border-primary bg-light p-4 shadow-sm rounded-end">
+                            <h5 class="fw-bold text-dark-blue mb-2"><i class="bi bi-center-radar text-primary me-2"></i>Hub Task</h5>
+                            <span class="badge bg-primary mb-3 align-self-start">Mandatory</span>
+                            <p class="small text-secondary mb-0">Accented zero-shot TTS in spontaneous Portuguese speech, restricted to publicly available datasets.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100 border-start border-4 border-secondary bg-light p-4 shadow-sm rounded-end">
+                            <h5 class="fw-bold text-dark-blue mb-2"><i class="bi bi-compass text-secondary me-2"></i>Spoke Task</h5>
+                            <span class="badge bg-secondary mb-3 align-self-start">Optional</span>
+                            <p class="small text-secondary mb-0">Accented zero-shot TTS in spontaneous Portuguese speech, with unrestricted data sources.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="fw-bold text-dark-blue mb-3 fs-4">Challenge</h3>
+                <p>The main difficulty is to simultaneously disentangle accent and timbre, allowing the model to reproduce accentual variations without compromising speaker identity. This challenge is compounded by the limited availability of Portuguese data, as well as the fact that we will provide only spontaneous speech recordings, which are often of lower quality—making the task even more demanding. The teams are free to enhance audio quality. It is possible to use only a sample from the large dataset of approximately 747 hours, relating to the 3 accents.</p>
+                <p class="mb-4">Another challenge is the diverse segmentation of the datasets: Recife has manual prosodic segmentation, São Paulo was automatically segmented by WhisperX and European Portuguese was also automatically segmented. Therefore, the models must be able to generalize with this limitation.</p>
+                <p class="mb-5">For both tasks, participants are required to use the provided audio files for training, while the use of the accompanying transcriptions is optional. They are also free to incorporate additional external data, with no restrictions on the total amount of training data, regarding that for the hub task the additional datasets are publicly available.</p>
+
+                <h4 class="fw-bold text-dark-blue mb-3 fs-5">Suggested Vocoders</h4>
+                <p class="small text-muted mb-3"><i class="bi bi-info-circle-fill text-primary"></i> Two suggestions of vocoders are given for the participants:</p>
+                <ul class="mb-5 text-secondary ps-3 small">
+                    <li class="mb-2">
+                        <strong>HiFi-GAN universal:</strong> 
+                        <a href="https://github.com/jik876/hifi-gan?tab=readme-ov-file#pretrained-model" target="_blank" class="text-primary text-decoration-underline break-word">GitHub Repository</a>
+                    </li>
+                    <li class="mb-2">
+                        <strong>BigVGAN v2:</strong> 
+                        <a href="https://huggingface.co/nvidia/bigvgan_v2_44khz_128band_512x" target="_blank" class="text-primary text-decoration-underline break-word">Hugging Face Model</a>
+                    </li>
+                </ul>
+
+                <hr class="my-5 opacity-25">
+
+                <h3 class="fw-bold text-dark-blue mb-3 fs-4">Program</h3>
+                <p class="text-secondary fst-italic mb-5">To Be Announced</p>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card bg-light border-0 p-4 shadow-sm position-sticky" style="top: 20px;">
+                    <h4 class="fw-bold text-dark-blue fs-5 border-bottom pb-2 mb-3">Challenge Navigation</h4>
+                    <div class="list-group list-group-flush gap-1">
+                        <a href="blizzard-challenge.html" class="list-group-item list-group-item-action border-0 rounded active">➔ About the Challenge</a>
+                        <a href="blizzard-challenge-program.html" class="list-group-item list-group-item-action border-0 rounded">➔ Preliminary Program</a>
+                        <a href="blizzard-challenge-dates.html" class="list-group-item list-group-item-action border-0 rounded">➔ Important Dates</a>
+                        <a href="blizzard-challenge-rules.html" class="list-group-item list-group-item-action border-0 rounded">➔ The Rules</a>
+                        <a href="blizzard-challenge-committee.html" class="list-group-item list-group-item-action border-0 rounded">➔ Organizing Committee</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-dark text-white-50 py-5 mt-5">
+        <div class="container px-4 px-md-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="text-white mb-3 fs-5">CONTACT</h4>
+                    <p class="small mb-0">For inquiries about the conference, please send an email to: <a href="mailto:seu-email@aqui.com" class="text-info fw-bold">here</a></p>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="text-white mb-3 fs-5">Acknowledgements</h4>
+                    <p class="small mb-0" style="font-size: 0.85rem;">The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white py-5 border-top">
+        <div class="container px-4 px-md-5">
+            <div class="row g-4 g-md-5 justify-content-center align-items-center text-center logo-container">
+                <div class="col-6 col-md-3"><img src="images/ufal.png" alt="UFAL" title="Universidade Federal de Alagoas"></div>
+                <div class="col-6 col-md-3"><img src="images/icmc.png" alt="ICMC - USP" title="Instituto de Ciências Matemáticas e de Computação - USP"></div>
+                <div class="col-6 col-md-3"><img src="images/unesp.png" alt="UNESP" title="Universidade Estadual Paulista"></div>
+                <div class="col-6 col-md-3"><img src="images/universidade_Lisboa.jpg" alt="Universidade de Lisboa" title="Universidade de Lisboa"></div>
+                <div class="col-6 col-md-3"><img src="images/inescid.png" alt="INESC-ID" title="INESC-ID Lisboa"></div>
+                <div class="col-6 col-md-3"><img src="images/ufmt.png" alt="UFMT" title="Universidade Federal de Mato Grosso"></div>
+                <div class="col-6 col-md-3"><img src="images/venturus.png" alt="Venturus" title="Venturus"></div>
+                <div class="col-6 col-md-3"><img src="images/nvidia.png" alt="NVIDIA" title="NVIDIA"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
