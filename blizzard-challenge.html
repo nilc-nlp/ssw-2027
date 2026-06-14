@@ -63,7 +63,7 @@
             
             <div class="col-lg-8 text-secondary">
 
-                <h3 class="fw-bold text-dark-blue mb-3 fs-4">The Blizzard Challenge 2027</h3>
+                <h3 class="fw-bold text-dark-blue mb-3 fs-4">About the Blizzard Challenge 2027</h3>
                 <p>Brazil is a continental country, the largest and most populous in South America. The Speech Synthesis Workshop (SSW) 2027 will bring up the issue of linguistic diversity to highlight two of several Brazilian accents. 
                     In line with this theme, the Blizzard Challenge 2027 will focus on synthesizing speech for two accents of Brazilian Portuguese and for one other main variant, European Portuguese from Portugal.</p>
                 <p class="mb-5">Brazilian Portuguese and European Portuguese differ in pronunciation, vocabulary, grammar, and formal usage. 
@@ -71,12 +71,9 @@
                 <p class="mb-5">We will provide participating teams with data covering the three accents, São Paulo, Recife, and European Portuguese from Portugal, totalling ~747 hours.</p>
 
 
-
-
                 
                 <p class="fs-5 text-secondary mb-4">
-                    The tasks focus on accented zero-shot TTS for Portuguese. We provide three datasets covering three distinct accents: <strong>São Paulo, Recife, and European Portuguese from Portugal</strong>, totaling ~747 hours.
-                </p>
+                    The task this year is <strong>accented zero-shot TTS for spontaneous Portuguese speech </strong> with a mandatory hub and an optional spoke task, described in the Rules. </p>
 
                 <div class="row g-4 mb-5">
                     <div class="col-md-6">
@@ -96,9 +93,27 @@
                     </div>
                 </div>
 
-                <h3 class="fw-bold text-dark-blue mb-3 fs-4">Challenge</h3>
+The Challenge
+
+The main difficulty will be to disentangle accent and timbre, allowing the model to reproduce accentual variations without compromising speaker identity. 
+
+This challenge is compounded by the limited availability of Portuguese data, as well as the fact that we will provide only spontaneous speech recordings, 
+which may be of lower quality than typical read speech recordings, making the task even more demanding. Participating teams will be free to enhance audio quality, should they choose to.          
+The challenge will provide a large dataset of approximately 747 hours of speech, covering the 3 accents, but teams are not required to use all (or indeed any) of this. 
+The target speakers for the zero-shot Hub and Spoke tasks are unseen and not included in this dataset, but they will be from one of the three accents represented in the dataset.
+
+Another challenge is the diverse annotation of the provided datasets. For all accents, a transcription will be provided, but teams are allowed to re-transcribe the speech if they wish. 
+Data in the Recife subset has a manual prosodic segmentation; data in the São Paulo subset has been automatically segmented by WhisperX; 
+data in the European Portuguese (EP) subset has also been automatically segmented by state-of-the-art EP CAMÕES ASR model for transcription-reference alignment. 
+ 
+                
+
+                <h3 class="fw-bold text-dark-blue mb-3 fs-4">The Challenge</h3>
+             
                 <p>The main difficulty is to simultaneously disentangle accent and timbre, allowing the model to reproduce accentual variations without compromising speaker identity. This challenge is compounded by the limited availability of Portuguese data, as well as the fact that we will provide only spontaneous speech recordings, which are often of lower quality—making the task even more demanding. The teams are free to enhance audio quality. It is possible to use only a sample from the large dataset of approximately 747 hours, relating to the 3 accents.</p>
+              
                 <p class="mb-4">Another challenge is the diverse segmentation of the datasets: Recife has manual prosodic segmentation, São Paulo was automatically segmented by WhisperX and European Portuguese was also automatically segmented. Therefore, the models must be able to generalize with this limitation.</p>
+               
                 <p class="mb-5">For both tasks, participants are required to use the provided audio files for training, while the use of the accompanying transcriptions is optional. They are also free to incorporate additional external data, with no restrictions on the total amount of training data, regarding that for the hub task the additional datasets are publicly available.</p>
 
                 <h4 class="fw-bold text-dark-blue mb-3 fs-5">Suggested Vocoders</h4>
