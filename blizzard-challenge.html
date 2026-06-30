@@ -20,26 +20,15 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav text-uppercase gap-2 text-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Welcome</a></li>
+                    <li class="nav-item"><a class="nav-link  active" href="index.html">Welcome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calls.html">Calls</a></li>
                     <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
                     <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
                     <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
                     <li class="nav-item"><a class="nav-link" href="authors.html">Authors</a></li>
                     <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
                     <li class="nav-item"><a class="nav-link" href="committees.html">Committees</a></li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="blizzardDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            The Blizzard Challenge 2027
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark bg-dark-blue" aria-labelledby="blizzardDropdown">
-                            <li><a class="dropdown-item active" href="blizzard-challenge.html">About the Challenge</a></li>
-                            <li><a class="dropdown-item" href="blizzard-challenge-program.html">Program</a></li>
-                            <li><a class="dropdown-item" href="blizzard-challenge-dates.html">Blizzard 2027 Call for Participation</a></li>
-                            <li><a class="dropdown-item" href="blizzard-challenge-rules.html">The Rules</a></li>
-                            <li><a class="dropdown-item" href="blizzard-challenge-committee.html">Organizing Committee</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="blizzard-challenge.html">The Blizzard Challenge 2027</a></li>
                 </ul>
             </div>
         </div>
@@ -63,7 +52,7 @@
             
             <div class="col-lg-8 text-secondary">
 
-                <h3 class="fw-bold text-dark-blue mb-3 fs-4">About the Blizzard Challenge 2027</h3>
+                <h3 class="fw-bold text-dark-blue mb-3 fs-4">The Blizzard Challenge 2027</h3>
                 <p>Brazil is a continental country, the largest and most populous in South America. The Speech Synthesis Workshop (SSW) 2027 will bring up the issue of linguistic diversity to highlight two of several Brazilian accents. 
                     In line with this theme, the Blizzard Challenge 2027 will focus on synthesizing speech for two accents of Brazilian Portuguese and for one other main variant, European Portuguese from Portugal.</p>
                 <p class="mb-5">Brazilian Portuguese and European Portuguese differ in pronunciation, vocabulary, grammar, and formal usage. 
@@ -107,33 +96,162 @@ Data in the Recife subset has a manual prosodic segmentation; data in the São P
 data in the European Portuguese (EP) subset has also been automatically segmented by state-of-the-art <a href="https://arxiv.org/html/2605.27062v1" class="text-info fw-bold">EP CAMÕES ASR model</a> for transcription-reference alignment.</p> 
  
                 
-                <h4 class="fw-bold text-dark-blue mb-3 fs-5">Suggested Vocoders</h4>
-                <p class="small text-muted mb-3"><i class="bi bi-info-circle-fill text-primary"></i> Two vocoders are suggested, for teams who do not wish to train their own:</p>
-                <ul class="mb-5 text-secondary ps-3 small">
-                    <li class="mb-2">
-                        <strong>HiFi-GAN universal:</strong> 
-                        <a href="https://github.com/jik876/hifi-gan?tab=readme-ov-file#pretrained-model" target="_blank" class="text-primary text-decoration-underline break-word">GitHub Repository</a>
-                    </li>
-                    <li class="mb-2">
-                        <strong>BigVGAN v2:</strong> 
-                        <a href="https://huggingface.co/nvidia/bigvgan_v2_44khz_128band_512x" target="_blank" class="text-primary text-decoration-underline break-word">Hugging Face Model</a>
-                    </li>
-                </ul>
+                <h3 class="fw-bold text-dark-blue mb-3 fs-4">Important Dates</h3>
+                <p class="mb-4">Please note the deadlines and milestone dates below for participating in the Blizzard Challenge 2027.</p>
+                
+                <div class="table-responsive mb-5">
+                    <table class="table table-striped table-hover align-middle border-top">
+                        <tbody>
+                            <tr><td class="fw-bold text-primary" style="white-space: nowrap;">July 1, 2026</td><td>Challenge announcement and registration open</td></tr>
+                            <tr><td class="fw-bold text-primary" style="white-space: nowrap;">July 1, 2026</td><td>Training dataset released</td></tr>
+                            <tr><td class="fw-bold text-dark" style="white-space: nowrap;">January 12, 2027</td><td>Team registration closes</td></tr>
+                            <tr><td class="fw-bold text-dark" style="white-space: nowrap;">February 1, 2027</td><td>Test dataset released to participants</td></tr>
+                            <tr><td class="fw-bold text-danger" style="white-space: nowrap;">April 12, 2027</td><td><strong>Deadline for participants to submit their systems (23:59 AoE)</strong></td></tr>
+                            <tr><td class="fw-bold text-dark" style="white-space: nowrap;">April 13, 2027</td><td>Last day for registration fee payment</td></tr>
+                            <tr><td class="fw-bold text-dark" style="white-space: nowrap;">April 19, 2027</td><td>Evaluation systems go live</td></tr>
+                            <tr><td class="fw-bold text-dark" style="white-space: nowrap;">June 19, 2027</td><td>End of evaluation period</td></tr>
+                            <tr><td class="fw-bold text-success" style="white-space: nowrap;">June 21, 2027</td><td>Results announced</td></tr>
+                            <tr><td class="fw-bold text-danger" style="white-space: nowrap;">July 21, 2027</td><td><strong>Deadline for workshop submissions (23:59 AoE)</strong></td></tr>
+                            <tr><td class="fw-bold text-dark" style="white-space: nowrap;">August 1, 2027</td><td>Notification of acceptance</td></tr>
+                            <tr><td class="fw-bold text-dark" style="white-space: nowrap;">August 16, 2027</td><td>Camera ready version</td></tr>
+                            
+                            <tr class="table-info"><td class="fw-bold" style="white-space: nowrap;">Aug 29 - Sep 2, 2027</td><td><strong>INTERSPEECH 2027</strong>, São Paulo, Brazil</td></tr>
+                            <tr class="table-success"><td class="fw-bold" style="white-space: nowrap;">September 6-8, 2027</td><td><strong>SSW14</strong>, Maceió, Alagoas, Brazil</td></tr>
+                            <tr class="table-warning"><td class="fw-bold" style="white-space: nowrap;">September 9, 2027</td><td><strong>Blizzard Challenge 2027</strong>, Maceió, Alagoas, Brazil</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="p-3 bg-light border-start rounded-end mb-5">
+                    <p class="mb-4"> 
+                        <ul>
+                        <li><strong>Any questions? </strong> Please contact <b>blizzard-challenge-organisers@googlegroups.com</b> if you have any questions.</li>
+                        <li><strong>Wiki:</strong> <a href="https://www.wiki.ed.ac.uk/spaces/BlizzardChallenge/pages/789512358/Blizzard+Challenge+2027" target="_blank">https://www.wiki.ed.ac.uk/spaces/BlizzardChallenge/pages/789512358/Blizzard+Challenge+2027</a></li>
+                        </ul>
+                    </p>
+                </div>
 
                 <hr class="my-5 opacity-25">
+
             </div>
 
             <div class="col-lg-4">
                 <div class="card bg-light border-0 p-4 shadow-sm position-sticky" style="top: 20px;">
-                    <h4 class="fw-bold text-dark-blue fs-5 border-bottom pb-2 mb-3">Challenge Navigation</h4>
+                    <h4 class="fw-bold text-dark-blue fs-5 border-bottom pb-2 mb-3">More Info</h4>
                     <div class="list-group list-group-flush gap-1">
-                        <a href="blizzard-challenge.html" class="list-group-item list-group-item-action border-0 rounded active">➔ About the Challenge</a>
-                        <a href="blizzard-challenge-program.html" class="list-group-item list-group-item-action border-0 rounded">➔ Program</a>
-                        <a href="blizzard-challenge-dates.html" class="list-group-item list-group-item-action border-0 rounded">➔ Blizzard 2027 Call for Participation</a>
-                        <a href="blizzard-challenge-rules.html" class="list-group-item list-group-item-action border-0 rounded">➔ The Rules</a>
-                        <a href="blizzard-challenge-committee.html" class="list-group-item list-group-item-action border-0 rounded">➔ Organizing Committee</a>
+                        <a class="list-group-item list-group-item-action border-0 rounded" href="https://www.wiki.ed.ac.uk/spaces/BlizzardChallenge/pages/789512358/Blizzard+Challenge+2027" target="_blank">About the Challenge</a>
+                        <a class="list-group-item list-group-item-action border-0 rounded" href="https://www.wiki.ed.ac.uk/spaces/BlizzardChallenge/pages/789512371/Blizzard+Challenge+2027+Workshop" target="_blank">Blizzard 2027 Call for Participation</a>
+                        <a class="list-group-item list-group-item-action border-0 rounded" href="https://www.wiki.ed.ac.uk/spaces/BlizzardChallenge/pages/789512359/Blizzard+Challenge+2027+Rules" target="_blank">The Rules</a>
                     </div>
                 </div>
+            </div>
+ 
+        </div>
+
+     </div>
+
+    
+
+    <div class="container px-4 px-md-5 py-4">
+        <div class="row g-5">
+            
+            <div class="col-lg-8 text-secondary">
+
+                <h3 class="fw-bold text-dark-blue mb-4 fs-4">Blizzard Challenge Organizing Committee</h3>
+                
+                <div class="row g-4 mb-5">
+                    
+                    <div class="col-6 col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 bg-light text-center p-3 shadow-sm rounded-3">
+                            <div class="mb-3 mx-auto rounded-circle overflow-hidden bg-secondary-subtle d-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+                                <img src="images/committee/sandra-aluisio.jpeg" alt="Sandra M Aluisio" class="img-fluid w-100 h-100 object-fit-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <i class="bi bi-person-fill fs-2 text-secondary" style="display: none;"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark-blue fs-6 mb-1">Sandra M Aluisio</h5>
+                            <p class="small text-muted mb-0">ICMC-USP</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 bg-light text-center p-3 shadow-sm rounded-3">
+                            <div class="mb-3 mx-auto rounded-circle overflow-hidden bg-secondary-subtle d-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+                                <img src="images/committee/renato-silva.jpg" alt="Renato Moraes Silva" class="img-fluid w-100 h-100 object-fit-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <i class="bi bi-person-fill fs-2 text-secondary" style="display: none;"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark-blue fs-6 mb-1">Renato Moraes Silva</h5>
+                            <p class="small text-muted mb-0">ICMC-USP</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 bg-light text-center p-3 shadow-sm rounded-3">
+                            <div class="mb-3 mx-auto rounded-circle overflow-hidden bg-secondary-subtle d-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+                                <img src="images/committee/sidney-leal.jpeg" alt="Sidney Leal" class="img-fluid w-100 h-100 object-fit-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <i class="bi bi-person-fill fs-2 text-secondary" style="display: none;"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark-blue fs-6 mb-1">Sidney Leal</h5>
+                            <p class="small text-muted mb-0">ICMC-USP, Venturus</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 bg-light text-center p-3 shadow-sm rounded-3">
+                            <div class="mb-3 mx-auto rounded-circle overflow-hidden bg-secondary-subtle d-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+                                <img src="images/committee/marcos-treviso.png" alt="Marcos Treviso" class="img-fluid w-100 h-100 object-fit-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <i class="bi bi-person-fill fs-2 text-secondary" style="display: none;"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark-blue fs-6 mb-1">Marcos Treviso</h5>
+                            <p class="small text-muted mb-0" style="font-size: 0.75rem;">IST, University of Lisbon</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 bg-light text-center p-3 shadow-sm rounded-3">
+                            <div class="mb-3 mx-auto rounded-circle overflow-hidden bg-secondary-subtle d-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+                                <img src="images/committee/adrian-carvalho.jpeg" alt="Adrian Moagne Nery Carvalho" class="img-fluid w-100 h-100 object-fit-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <i class="bi bi-person-fill fs-2 text-secondary" style="display: none;"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark-blue fs-6 mb-1">Adrian M. N. Carvalho</h5>
+                            <p class="small text-muted mb-0">ICMC-USP</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 bg-light text-center p-3 shadow-sm rounded-3">
+                            <div class="mb-3 mx-auto rounded-circle overflow-hidden bg-secondary-subtle d-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+                                <img src="images/committee/alberto-abad.jpeg" alt="Alberto Abad" class="img-fluid w-100 h-100 object-fit-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <i class="bi bi-person-fill fs-2 text-secondary" style="display: none;"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark-blue fs-6 mb-1">Alberto Abad</h5>
+                            <p class="small text-muted mb-0" style="font-size: 0.75rem;">IST, Univ. of Lisbon, INESC-ID</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 bg-light text-center p-3 shadow-sm rounded-3">
+                            <div class="mb-3 mx-auto rounded-circle overflow-hidden bg-secondary-subtle d-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+                                <img src="images/committee/sergio-paulo.jpeg" alt="Sérgio Paulo" class="img-fluid w-100 h-100 object-fit-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <i class="bi bi-person-fill fs-2 text-secondary" style="display: none;"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark-blue fs-6 mb-1">Sérgio Paulo</h5>
+                            <p class="small text-muted mb-0">INESC-ID</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 bg-light text-center p-3 shadow-sm rounded-3">
+                            <div class="mb-3 mx-auto rounded-circle overflow-hidden bg-secondary-subtle d-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+                                <img src="images/committee/frederico-oliveira.png" alt="Frederico Santos de Oliveira" class="img-fluid w-100 h-100 object-fit-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <i class="bi bi-person-fill fs-2 text-secondary" style="display: none;"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark-blue fs-6 mb-1">Frederico S. de Oliveira</h5>
+                            <p class="small text-muted mb-0">UFMT, CEIA</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
