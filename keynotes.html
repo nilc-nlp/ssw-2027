@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keynote Speakers - Speech Synthesis Workshop 2027</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <style>
+        .speaker-card {
+            background-color: #f8fafc; /* Fundo levemente acinzentado/azulado */
+            border: 2px solid #e2e8f0 !important; /* Borda suave */
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .speaker-card:hover {
+            background-color: #ffffff; /* Ao passar o mouse, ganha um brilho limpo */
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(13, 110, 253, 0.12) !important;
+        }
+
+        .speaker-avatar-wrapper {
+            width: 140px;
+            height: 140px;
+            min-width: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #f8f9fa;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: #e9ecef;
+        }
+        .speaker-avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .speaker-avatar-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #6c757d;
+            background-color: #e2e8f0;
+        }
+        .talk-title {
+            color: #1e293b;
+            font-weight: 700;
+        }
+        .abstract-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #0d6efd;
+            border-radius: 0 8px 8px 0;
+        }
+        .bio-box {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        .badge-keynote {
+            background-color: #0d6efd;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .badge-tba {
+            background-color: #6c757d;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark-blue border-bottom border-secondary">
+        <div class="container-fluid px-4 px-md-5">
+            <a class="navbar-brand d-xl-none text-white small" href="index.html">SSW 2027</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-uppercase gap-2 text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Welcome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calls.html">Calls</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="program.html" id="programDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Program
+    </a>
+    <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="programDropdown">
+        <li><a class="dropdown-item py-2" href="program.html"><i class="bi bi-calendar-week me-2 text-primary"></i>Schedule & Overview</a></li>
+        <li><a class="dropdown-item py-2" href="keynotes.html"><i class="bi bi-mic-fill me-2 text-primary"></i>Keynote Speakers</a></li>
+    </ul>
+</li>
+
+                    <li class="nav-item"><a class="nav-link" href="authors.html">Authors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="committees.html">Committees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blizzard-challenge.html">The Blizzard Challenge 2027</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header-hero text-white mb-5">
+        <div class="container-fluid px-4 px-md-5">
+            <div class="row justify-content-end">
+                <div class="col-md-9 col-lg-6 text-end text-shadow-strong">
+                    <h1 class="display-5 fw-bold mb-2">Speech Synthesis Workshop 2027</h1>
+                    <p class="fs-6 fst-italic fw-light text-light opacity-90 mb-0">
+                        Embracing culture, heritage and diversity in Brazilian accents
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Keynotes Section Header -->
+    <div class="container px-4 px-md-5 py-3">
+        <div class="row mb-5 text-center">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-6 fw-bold text-dark-blue">Keynote Speakers</h2>
+ 
+                <!-- Quick Navigation Links -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+                    <a href="#simon-king" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                        <i class="bi bi-person-fill me-1"></i> Simon King
+                    </a>
+                    <a href="#daniela-claro" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                        <i class="bi bi-person-fill me-1"></i> Daniela Claro
+                    </a>
+                    <a href="#rafael-valle" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                        <i class="bi bi-person-fill me-1"></i> Rafael Valle
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            
+            <!-- SPEAKER 1: SIMON KING -->
+            <div class="col-12" id="simon-king">
+                <div class="card speaker-card shadow-sm border p-4 p-md-5">
+                    <div class="row g-4 align-items-start">
+                        <!-- Speaker Photo / Avatar -->
+                        <div class="col-auto mx-auto mx-md-0">
+                            <div class="speaker-avatar-wrapper">
+                                <img src="images/people/Simon_King_2020.jpg" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'speaker-avatar-placeholder\'><i class=\'bi bi-person\'></i></div>';" alt="Simon King" class="speaker-avatar">
+                            </div>
+                        </div>
+
+                        <!-- Speaker Info & Talk Details -->
+                        <div class="col">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                                <div>
+                                    <h3 class="fw-bold mb-1 text-dark">Simon King</h3>
+                                    <p class="text-muted mb-0 fw-medium">
+                                        <i class="bi bi-building me-1"></i> Professor of Speech Processing &bull; University of Edinburgh, UK
+                                    </p>
+                                </div>
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill">Keynote Speaker</span>
+                            </div>
+
+                            <hr class="my-3 opacity-25">
+
+                            <!-- Keynote Talk -->
+                            <div class="talk-container mb-4">
+                                <div class="text-uppercase small fw-bold text-primary mb-1">
+                                    <i class="bi bi-mic-fill me-1"></i> Keynote Talk
+                                </div>
+                                <h4 class="talk-title fs-4 mb-3">Standing on the shoulders of giants</h4>
+                                
+                                <div class="abstract-box p-3 p-md-4">
+                                    <h6 class="fw-bold text-dark mb-2"><i class="bi bi-quote me-1"></i> Abstract</h6>
+                                    <p class="text-secondary mb-0 lh-lg">
+                                        It is often said that we are "standing on the shoulders of giants". I certainly feel that way: everything I do builds on the work of others, often from long ago. But I have observed a trend of narrowing citation patterns in our field. Too many researchers cite only very recent work. Are they really not reading "old" work? Do they think it is no longer relevant? In this talk, I will present a case study which looks not only at the methods being used and the novel contributions being claimed, but also the research questions being asked. I will convince you that the literature is a gold mine, full of great ideas and inspirations. Whatever problem you are working on, there is an "old" paper that will help you.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- About the Speaker -->
+                            <div class="bio-box p-3 p-md-4">
+                                <h6 class="fw-bold text-dark mb-2"><i class="bi bi-info-circle me-1"></i> About the Speaker</h6>
+                                <p class="text-secondary small mb-0 lh-lg">
+                                    Simon King has been with the Centre for Speech Technology Research, University of Edinburgh, since 1993, where he is now Professor of Speech Processing and Director of the Centre. His research interests span all aspects of synthetic speech generation and signal processing. He was Technical Chair of Interspeech 2023, has been an Associate Editor of the IEEE/ACM Transactions on Audio, Speech, and Language Processing, and is currently an Associate Editor of Computer Speech and Language. He is a Fellow of IEEE and a Fellow of ISCA. He directs, and teaches on, a long-running Masters programme in Speech & Language Processing, where he enjoys making students read some really "old" publications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SPEAKER 3: DANIELA CLARO -->
+            <div class="col-12" id="daniela-claro">
+                <div class="card speaker-card shadow-sm border p-4 p-md-5">
+                    <div class="row g-4 align-items-start">
+                        <!-- Speaker Photo / Avatar -->
+                        <div class="col-auto mx-auto mx-md-0">
+                            <div class="speaker-avatar-wrapper">
+                                <img src="images/people/Daniela-Claro.jpeg" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'speaker-avatar-placeholder\'><i class=\'bi bi-person\'></i></div>';" alt="Daniela Claro" class="speaker-avatar">
+                            </div>
+                        </div>
+
+                        <!-- Speaker Info & Talk Details -->
+                        <div class="col">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                                <div>
+                                    <h3 class="fw-bold mb-1 text-dark">Daniela Claro</h3>
+                                    <p class="text-muted mb-0 fw-medium">
+                                        <i class="bi bi-building me-1"></i> Full Professor &bull; Federal University of Bahia, Brazil
+                                    </p>
+                                </div>
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill">Keynote Speaker</span>
+                            </div>
+
+                            <hr class="my-3 opacity-25">
+
+                            <!-- Keynote Talk -->
+                            <div class="talk-container mb-4">
+                                <div class="text-uppercase small fw-bold text-primary mb-1">
+                                    <i class="bi bi-mic-fill me-1"></i> Keynote Talk
+                                </div>
+                                <h4 class="talk-title fs-4 mb-3">Toward a Talking Linguistic Atlas: A Roadmap for Speaking Dialect Maps of Brazilian Portuguese from ALiB Project</h4>
+                                
+                                <div class="abstract-box p-3 p-md-4">
+                                    <h6 class="fw-bold text-dark mb-2"><i class="bi bi-quote me-1"></i> Abstract</h6>
+                                    <p class="text-secondary mb-0 lh-lg">
+                                        The Linguistic Atlas of Brazil (ALiB) project has collected regional spoken Portuguese, which its web system, ALiBWeb, now organizes into a database that links audio, georeferenced data and linguistic charts. This talk proposes a roadmap from today's maps to a "talking atlas", where users can hear and eventually interact with regional speech. We discuss the main challenges, including legacy field-recording quality, transcription-audio alignment, data scarcity per locality and ethical use of speakers' voices.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- About the Speaker -->
+                            <div class="bio-box p-3 p-md-4">
+                                <h6 class="fw-bold text-dark mb-2"><i class="bi bi-info-circle me-1"></i> About the Speaker</h6>
+                                <p class="text-secondary small mb-0 lh-lg">
+                                    Daniela Barreiro Claro is a Full Professor at UFBA and founder of FORMAS (Research Center on Data and Natural Language). She coordinated the development of ALiBWeb, the web system of the Linguistic Atlas of Brazil (ALiB) project, from 2014 to 2022. Her research covers Natural Language Processing, Open Information Extraction for Portuguese, semantic and pragmatic interoperability, and computational approaches to dialectology. She is vice-chair of the SBC Special Committee on NLP, a member of the editorial board of the Journal of the Brazilian Computer Society (JBCS), and a member of the INCT on Responsible AI for Computational Linguistics (TILD-IAR).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SPEAKER 2: RAFAEL VALLE -->
+            <div class="col-12" id="rafael-valle">
+                <div class="card speaker-card shadow-sm border p-4 p-md-5">
+                    <div class="row g-4 align-items-start">
+                        <!-- Speaker Photo / Avatar -->
+                        <div class="col-auto mx-auto mx-md-0">
+                            <div class="speaker-avatar-wrapper">
+                                <img src="images/people/Rafael-Vale.jpeg" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'speaker-avatar-placeholder\'><i class=\'bi bi-person\'></i></div>';" alt="Rafael Valle" class="speaker-avatar">
+                            </div>
+                        </div>
+
+                        <!-- Speaker Info & Talk Details -->
+                        <div class="col">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                                <div>
+                                    <h3 class="fw-bold mb-1 text-dark">Rafael Valle</h3>
+                                    <p class="text-muted mb-0 fw-medium">
+                                        <i class="bi bi-building me-1"></i> CSO @ RIME &bull; Rime &middot; University of California, Berkeley
+                                    </p>
+                                </div>
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill">Keynote Speaker</span>
+                            </div>
+
+                            <hr class="my-3 opacity-25">
+
+                            <!-- Keynote Talk (Placeholder / TBA) -->
+                            <div class="talk-container mb-4">
+                                <div class="text-uppercase small fw-bold text-primary mb-1">
+                                    <i class="bi bi-mic-fill me-1"></i> Keynote Talk
+                                </div>
+                                <h4 class="talk-title fs-4 mb-3 text-muted fst-italic">
+                                    Title & Abstract to be announced
+                                </h4>
+                                
+                                <div class="abstract-box p-3 p-md-4 border-secondary-subtle">
+                                    <div class="d-flex align-items-center text-muted">
+                                        <i class="bi bi-clock-history fs-5 me-2"></i>
+                                        <span class="fst-italic">Detailed information regarding this talk will be available soon. Please check back for updates.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- About the Speaker (Placeholder / TBA) -->
+                            <div class="bio-box p-3 p-md-4">
+                                <h6 class="fw-bold text-dark mb-2"><i class="bi bi-info-circle me-1"></i> About the Speaker</h6>
+                                <p class="text-muted small mb-0 fst-italic">
+                                    Bio details will be updated shortly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Contact Banner -->
+    <div class="bg-dark text-white-50 py-5 mt-5">
+        <div class="container px-4 px-md-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="text-white mb-3 fs-5">CONTACT</h4>
+                    <p class="small mb-0">For inquiries about the conference, please send an email to: <a href="mailto:sswblizzard2027@gmail.com" class="text-info fw-bold">here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Logos -->
+    <footer class="bg-white py-5 border-top">
+        <div class="container px-4 px-md-5">
+            <div class="row g-3 g-md-5 justify-content-center align-items-center text-center logo-container">
+                <div class="col-6 col-md-4"><img src="images/abralin.svg" alt="ABRALIN" title="Associação Brasileira de Linguística"></div>
+                <div class="col-6 col-md-4"><img src="images/ufal.png" alt="UFAL" title="Universidade Federal de Alagoas"></div>
+                <div class="col-6 col-md-4"><img src="images/icmc.png" alt="ICMC - USP" title="Instituto de Ciências Matemáticas e de Computação - USP"></div>
+                <div class="col-6 col-md-4"><img src="images/unesp.png" alt="UNESP" title="Universidade Estadual Paulista"></div>
+                <div class="col-6 col-md-4"><img src="images/universidade_Lisboa.jpg" alt="Universidade de Lisboa" title="Universidade de Lisboa"></div>
+                <div class="col-6 col-md-4"><img src="images/inescid.png" alt="INESC-ID" title="INESC-ID Lisboa"></div>
+                <div class="col-6 col-md-4"><img src="images/ufmt.png" alt="UFMT" title="Universidade Federal de Mato Grosso"></div>
+                <div class="col-6 col-md-4"><img src="images/venturus.png" alt="Venturus" title="Venturus"></div>
+                <div class="col-6 col-md-4"><img src="images/nvidia.png" alt="NVIDIA" title="NVIDIA"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
